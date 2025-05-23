@@ -1,5 +1,6 @@
 import { useCurrencies } from 'uniswap/src/components/TokenSelector/hooks/useCurrencies'
-import { USDC, USDT, WBTC } from 'uniswap/src/constants/tokens'
+// import { USDC, USDT, WBTC } from 'uniswap/src/constants/tokens'
+import { USDC_WONDER } from 'uniswap/src/constants/tokens'
 import { GqlResult } from 'uniswap/src/data/types'
 import { useEnabledChains } from 'uniswap/src/features/chains/hooks/useEnabledChains'
 import { UniverseChainId } from 'uniswap/src/features/chains/types'
@@ -9,15 +10,12 @@ import { buildNativeCurrencyId, buildWrappedNativeCurrencyId, currencyId } from 
 // Use Mainnet base token addresses since TokenProjects query returns each token
 // on each network
 const baseCurrencyIds = [
-  buildNativeCurrencyId(UniverseChainId.Mainnet),
-  buildNativeCurrencyId(UniverseChainId.Polygon),
-  buildNativeCurrencyId(UniverseChainId.Bnb),
-  buildNativeCurrencyId(UniverseChainId.Celo),
-  buildNativeCurrencyId(UniverseChainId.Avalanche),
-  currencyId(USDC),
-  currencyId(USDT),
-  currencyId(WBTC),
-  buildWrappedNativeCurrencyId(UniverseChainId.Mainnet),
+  // buildNativeCurrencyId(UniverseChainId.Mainnet),
+  // currencyId(USDC),
+  // currencyId(USDT),
+  // currencyId(WBTC),
+  // buildWrappedNativeCurrencyId(UniverseChainId.Mainnet),
+  currencyId(USDC_WONDER),
 ]
 
 export function useAllCommonBaseCurrencies(): GqlResult<CurrencyInfo[]> {

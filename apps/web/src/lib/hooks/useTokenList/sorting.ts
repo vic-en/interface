@@ -1,4 +1,4 @@
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@unifinance/sdk-core'
 import { PortfolioBalance } from 'appGraphql/data/portfolios'
 import { supportedChainIdFromGQLChain } from 'appGraphql/data/util'
 import { nativeOnChain } from 'uniswap/src/constants/tokens'

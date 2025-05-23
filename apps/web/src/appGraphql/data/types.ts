@@ -1,6 +1,5 @@
 import { PricePoint, fiatOnRampToCurrency, gqlToCurrency } from 'appGraphql/data/util'
-import { COMMON_BASES, buildPartialCurrencyInfo } from 'uniswap/src/constants/routing'
-import { USDC_OPTIMISM } from 'uniswap/src/constants/tokens'
+import { COMMON_BASES } from 'uniswap/src/constants/routing'
 import {
   Token as GqlToken,
   ProtectionResult,
@@ -64,10 +63,7 @@ export function meldSupportedCurrencyToCurrencyInfo(forCurrency: FORSupportedTok
     }
   }
 
-  // Special case for *bridged* USDC on Optimism, which we otherwise don't use in our app.
-  if (isSameAddress(forCurrency.address, '0x7f5c764cbc14f9669b88837ca1490cca17c31607')) {
-    return buildPartialCurrencyInfo(USDC_OPTIMISM)
-  }
+
 
   const currency = fiatOnRampToCurrency(forCurrency)
   if (!currency) {

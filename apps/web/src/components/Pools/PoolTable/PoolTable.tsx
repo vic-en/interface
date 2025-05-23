@@ -2,7 +2,7 @@ import { ApolloError } from '@apollo/client'
 import { createColumnHelper } from '@tanstack/react-table'
 import { InterfaceElementName } from '@uniswap/analytics-events'
 import { TokenStats } from '@uniswap/client-explore/dist/uniswap/explore/v1/service_pb'
-import { Percent, Token } from '@uniswap/sdk-core'
+import { Percent, Token } from '@unifinance/sdk-core'
 import { PoolSortFields, TablePool } from 'appGraphql/data/pools/useTopPools'
 import { OrderDirection, gqlToCurrency, supportedChainIdFromGQLChain, unwrapToken } from 'appGraphql/data/util'
 import { PortfolioLogo } from 'components/AccountDrawer/MiniPortfolio/PortfolioLogo'
@@ -34,7 +34,7 @@ import { Flex, Text, styled, useMedia } from 'ui/src'
 import { LearnMoreLink } from 'uniswap/src/components/text/LearnMoreLink'
 import { getNativeAddress } from 'uniswap/src/constants/addresses'
 import { BIPS_BASE } from 'uniswap/src/constants/misc'
-import { UNI } from 'uniswap/src/constants/tokens'
+import { USDC_WONDER } from 'uniswap/src/constants/tokens'
 import { uniswapUrls } from 'uniswap/src/constants/urls'
 import { Chain, ProtocolVersion } from 'uniswap/src/data/graphql/uniswap-data-api/__generated__/types-and-hooks'
 import { useEnabledChains } from 'uniswap/src/features/chains/hooks/useEnabledChains'
@@ -594,7 +594,7 @@ function RewardAprCell({ apr, isLoading, rewardApr, token0CurrencyId, token1Curr
         <TableText color="$accent1" mr="$spacing4">
           {formatPercent(rewardApr)}
         </TableText>
-        <CurrencyLogo currency={UNI[UniverseChainId.Mainnet]} size={16} />
+        <CurrencyLogo currency={USDC_WONDER} size={16} />
       </Cell>
     </MouseoverTooltip>
   )

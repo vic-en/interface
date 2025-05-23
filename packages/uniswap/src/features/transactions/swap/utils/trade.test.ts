@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, TradeType } from '@unifinance/sdk-core'
 import { FeeAmount, Pool, Route } from '@uniswap/v3-sdk'
 import { UNI, WBTC } from 'uniswap/src/constants/tokens'
 import { ClassicQuoteResponse } from 'uniswap/src/data/apiClients/tradingApi/TradingApiClient'

@@ -1,7 +1,7 @@
 import 'test-utils/tokens/mocks'
 
 import { ApolloError } from '@apollo/client'
-import { Percent, Token } from '@uniswap/sdk-core'
+import { Percent, Token } from '@unifinance/sdk-core'
 import { usePoolsFromTokenAddress } from 'appGraphql/data/pools/usePoolsFromTokenAddress'
 import { TokenDetailsPoolsTable } from 'components/Tokens/TokenDetails/tables/TokenDetailsPoolsTable'
 import Router from 'react-router-dom'

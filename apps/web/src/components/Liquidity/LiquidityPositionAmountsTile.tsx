@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Percent } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Percent } from '@unifinance/sdk-core'
 import { getTokenDetailsURL } from 'appGraphql/data/util'
 import { useCurrencyInfo } from 'hooks/Tokens'
 import { useNavigate } from 'react-router-dom'

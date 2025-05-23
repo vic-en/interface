@@ -1,6 +1,6 @@
 import type { BottomSheetView } from '@gorhom/bottom-sheet'
 import { InterfaceEventName, InterfaceModalName } from '@uniswap/analytics-events'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { hasStringAsync } from 'expo-clipboard'
 import { ComponentProps, memo, useCallback, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'

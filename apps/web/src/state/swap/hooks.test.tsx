@@ -1,4 +1,4 @@
-import { UNI_ADDRESSES } from '@uniswap/sdk-core'
+import { UNI_ADDRESSES } from '@unifinance/sdk-core'
 import { NATIVE_CHAIN_ID } from 'constants/tokens'
 import { parse } from 'qs'
 import {

@@ -1,4 +1,4 @@
-import { CurrencyAmount } from '@uniswap/sdk-core'
+import { CurrencyAmount } from '@unifinance/sdk-core'
 import JSBI from 'jsbi'
 import { DAI } from 'uniswap/src/constants/tokens'
 import {

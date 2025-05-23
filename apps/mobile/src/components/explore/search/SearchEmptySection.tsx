@@ -30,7 +30,7 @@ export function SearchEmptySection({ selectedChain }: { selectedChain: UniverseC
 
   // Popular NFT collections data is only available on Mainnet
   // TODO(WALL-5876): Update this once we have a way to fetch NFT collections for all chains
-  const showPopularNftCollections = !selectedChain || selectedChain === UniverseChainId.Mainnet
+  const showPopularNftCollections = !selectedChain || selectedChain === UniverseChainId.Wonder
 
   const onPressClearSearchHistory = (): void => {
     dispatch(clearSearchHistory())

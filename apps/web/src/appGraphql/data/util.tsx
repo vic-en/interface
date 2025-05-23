@@ -1,7 +1,7 @@
 import { DeepPartial } from '@apollo/client/utilities'
 import { BigNumber } from '@ethersproject/bignumber'
 import { DataTag, DefaultError, QueryKey, UndefinedInitialDataOptions, queryOptions } from '@tanstack/react-query'
-import { Currency, Token } from '@uniswap/sdk-core'
+import { Currency, Token } from '@unifinance/sdk-core'
 import { NATIVE_CHAIN_ID } from 'constants/tokens'
 import ms from 'ms'
 import { ExploreTab } from 'pages/Explore/constants'

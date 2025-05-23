@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, NativeCurrency } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, NativeCurrency } from '@unifinance/sdk-core'
 import JSBI from 'jsbi'
 import { GasEstimate } from 'uniswap/src/data/tradingApi/types'
 import { areEqualGasStrategies } from 'uniswap/src/features/gas/types'

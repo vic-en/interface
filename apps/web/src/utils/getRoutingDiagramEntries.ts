@@ -1,5 +1,5 @@
 import { Protocol } from '@uniswap/router-sdk'
-import { Percent, TradeType } from '@uniswap/sdk-core'
+import { Percent, TradeType } from '@unifinance/sdk-core'
 import { Pair } from '@uniswap/v2-sdk'
 import { Pool as V3Pool } from '@uniswap/v3-sdk'
 import { ClassicTrade } from 'state/routing/types'

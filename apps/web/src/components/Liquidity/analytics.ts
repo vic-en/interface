@@ -1,6 +1,6 @@
 import { LiquidityEventName } from '@uniswap/analytics-events'
 import { ProtocolVersion } from '@uniswap/client-pools/dist/pools/v1/types_pb'
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount } from '@unifinance/sdk-core'
 import { FeeAmount } from '@uniswap/v3-sdk'
 import { LiquidityAnalyticsProperties } from 'uniswap/src/features/telemetry/types'
 import { TransactionStepType } from 'uniswap/src/features/transactions/steps/types'

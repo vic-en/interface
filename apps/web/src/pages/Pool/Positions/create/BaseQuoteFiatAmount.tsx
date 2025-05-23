@@ -1,4 +1,4 @@
-import { Currency, Price } from '@uniswap/sdk-core'
+import { Currency, Price } from '@unifinance/sdk-core'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'
 import { Text, TextProps } from 'ui/src'
 import { useUSDCValue } from 'uniswap/src/features/transactions/hooks/useUSDCPrice'

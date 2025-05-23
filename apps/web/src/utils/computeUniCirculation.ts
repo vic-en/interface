@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { CurrencyAmount, Token } from '@unifinance/sdk-core'
 import JSBI from 'jsbi'
 
 const STAKING_GENESIS = 1600387200

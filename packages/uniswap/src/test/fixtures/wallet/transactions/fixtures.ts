@@ -1,5 +1,5 @@
 import { TransactionRequest } from '@ethersproject/providers'
-import { TradeType } from '@uniswap/sdk-core'
+import { TradeType } from '@unifinance/sdk-core'
 import { Routing } from 'uniswap/src/data/tradingApi/__generated__/index'
 import { AssetType } from 'uniswap/src/entities/assets'
 import { SUPPORTED_CHAIN_IDS } from 'uniswap/src/features/chains/types'

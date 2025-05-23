@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { useCurrencyInfo } from 'hooks/Tokens'
 import styled from 'lib/styled-components'
 import { memo } from 'react'

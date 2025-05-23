@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Percent } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Percent } from '@unifinance/sdk-core'
 import { useTranslation } from 'react-i18next'
 import { Flex, HeightAnimator, Separator, Text, TouchableArea, UniswapXText, isWeb } from 'ui/src'
 import { AlertTriangleFilled } from 'ui/src/components/icons/AlertTriangleFilled'

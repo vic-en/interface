@@ -1,5 +1,5 @@
 import { AllowanceTransfer, MaxAllowanceTransferAmount, PermitSingle, permit2Address } from '@uniswap/permit2-sdk'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { CurrencyAmount, Token } from '@unifinance/sdk-core'
 import { useAccount } from 'hooks/useAccount'
 import { useEthersSigner } from 'hooks/useEthersSigner'
 import { useTriggerOnTransactionType } from 'hooks/useTriggerOnTransactionType'

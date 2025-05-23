@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { useReportTotalBalancesUsdForAnalytics } from 'appGraphql/data/apollo/useReportTotalBalancesUsdForAnalytics'
 import usePrevious from 'hooks/usePrevious'
 import { PropsWithChildren, useEffect, useMemo, useState } from 'react'

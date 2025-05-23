@@ -1,4 +1,4 @@
-import { TradeType } from '@uniswap/sdk-core'
+import { TradeType } from '@unifinance/sdk-core'
 import {
   BridgeTransactionInfo,
   ConfirmedSwapTransactionInfo,

@@ -1,6 +1,7 @@
 import { ApolloClient, HttpLink, from } from '@apollo/client'
 import { setupSharedApolloCache } from 'uniswap/src/data/cache'
 import { getDatadogApolloLink } from 'utilities/src/logger/datadog/datadogLink'
+import { mockApolloLink } from './mockLink'
 
 const API_URL = process.env.REACT_APP_AWS_API_ENDPOINT
 if (!API_URL) {
@@ -12,7 +13,7 @@ const datadogLink = getDatadogApolloLink()
 
 export const apolloClient = new ApolloClient({
   connectToDevTools: true,
-  link: from([datadogLink, httpLink]),
+  link: mockApolloLink, //from([datadogLink, httpLink]),
   headers: {
     'Content-Type': 'application/json',
     Origin: 'https://app.uniswap.org',
@@ -20,7 +21,10 @@ export const apolloClient = new ApolloClient({
   cache: setupSharedApolloCache(),
   defaultOptions: {
     watchQuery: {
-      fetchPolicy: 'cache-and-network',
+      fetchPolicy: 'cache-only',
+    },
+    query: {
+      fetchPolicy: 'cache-only'
     },
   },
 })

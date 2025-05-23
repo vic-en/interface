@@ -1,4 +1,4 @@
-import { CurrencyAmount } from '@uniswap/sdk-core'
+import { CurrencyAmount } from '@unifinance/sdk-core'
 import { ErrorCallout } from 'components/ErrorCallout'
 import {
   IncreaseLiquidityStep,

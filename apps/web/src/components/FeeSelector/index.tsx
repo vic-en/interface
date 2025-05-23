@@ -1,5 +1,5 @@
 import { FeePoolSelectAction, LiquidityEventName } from '@uniswap/analytics-events'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { FeeAmount } from '@uniswap/v3-sdk'
 import { OutlineCard } from 'components/Card/cards'
 import { FeeOption } from 'components/FeeSelector/FeeOption'

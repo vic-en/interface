@@ -1,6 +1,6 @@
 import 'test-utils/tokens/mocks'
 
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@unifinance/sdk-core'
 import SwapLineItem, { SwapLineItemType } from 'components/swap/SwapLineItem'
 import { InterfaceTrade } from 'state/routing/types'
 import {

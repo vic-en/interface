@@ -1,4 +1,4 @@
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@unifinance/sdk-core'
 import { Pool, Position } from '@uniswap/v3-sdk'
 import { getTokensAsync } from 'components/AccountDrawer/MiniPortfolio/Pools/getTokensAsync'
 import { useInterfaceMulticallContracts } from 'components/AccountDrawer/MiniPortfolio/Pools/hooks'

@@ -1,6 +1,6 @@
 import { ApolloError } from '@apollo/client'
 import { createColumnHelper } from '@tanstack/react-table'
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@unifinance/sdk-core'
 import { TokenTransactionType, useTokenTransactions } from 'appGraphql/data/useTokenTransactions'
 import { unwrapToken } from 'appGraphql/data/util'
 import { Table } from 'components/Table'

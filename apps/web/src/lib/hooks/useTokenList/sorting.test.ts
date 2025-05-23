@@ -1,4 +1,4 @@
-import { Token as InterfaceToken } from '@uniswap/sdk-core'
+import { Token as InterfaceToken } from '@unifinance/sdk-core'
 import { getSortedPortfolioTokens } from 'lib/hooks/useTokenList/sorting'
 import { DAI, USDC_MAINNET, USDT, WBTC, nativeOnChain } from 'uniswap/src/constants/tokens'
 import {

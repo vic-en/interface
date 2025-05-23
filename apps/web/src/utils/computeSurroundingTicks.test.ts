@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-restricted-imports
 import { ProtocolVersion } from '@uniswap/client-pools/dist/pools/v1/types_pb'
-import { Price, Token } from '@uniswap/sdk-core'
+import { Price, Token } from '@unifinance/sdk-core'
 import { FeeAmount, TICK_SPACINGS } from '@uniswap/v3-sdk'
 import { TickData } from 'appGraphql/data/AllV3TicksQuery'
 import JSBI from 'jsbi'

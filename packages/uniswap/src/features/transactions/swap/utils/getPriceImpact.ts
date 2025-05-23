@@ -1,4 +1,4 @@
-import { CurrencyAmount, Percent, type Currency } from '@uniswap/sdk-core'
+import { CurrencyAmount, Percent, type Currency } from '@unifinance/sdk-core'
 import { ValueType, getCurrencyAmount } from 'uniswap/src/features/tokens/getCurrencyAmount'
 import type { DerivedSwapInfo } from 'uniswap/src/features/transactions/swap/types/derivedSwapInfo'
 import { getSwapFeeUsdFromDerivedSwapInfo } from 'uniswap/src/features/transactions/swap/utils/getSwapFeeUsd'

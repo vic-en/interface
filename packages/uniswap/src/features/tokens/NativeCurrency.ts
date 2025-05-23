@@ -1,5 +1,5 @@
 // adapted from https://github.com/Uniswap/interface/src/constants/tokens.ts
-import { Currency, NativeCurrency as NativeCurrencyClass, Token } from '@uniswap/sdk-core'
+import { Currency, NativeCurrency as NativeCurrencyClass, Token } from '@unifinance/sdk-core'
 import { getNativeAddress } from 'uniswap/src/constants/addresses'
 import { getChainInfo } from 'uniswap/src/features/chains/chainInfo'
 import { UniverseChainId } from 'uniswap/src/features/chains/types'

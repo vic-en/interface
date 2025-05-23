@@ -1,5 +1,5 @@
 import { PositionStatus, ProtocolVersion } from '@uniswap/client-pools/dist/pools/v1/types_pb'
-import { Currency, Price } from '@uniswap/sdk-core'
+import { Currency, Price } from '@unifinance/sdk-core'
 import { FeeAmount } from '@uniswap/v3-sdk'
 import { ActiveLiquidityChart } from 'components/Charts/ActiveLiquidityChart/ActiveLiquidityChart'
 import { BandsIndicator } from 'components/Charts/BandsIndicator/bands-indicator'

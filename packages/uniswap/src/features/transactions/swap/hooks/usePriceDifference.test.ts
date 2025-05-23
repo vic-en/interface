@@ -1,4 +1,4 @@
-import { CurrencyAmount } from '@uniswap/sdk-core'
+import { CurrencyAmount } from '@unifinance/sdk-core'
 import { USDC } from 'uniswap/src/constants/tokens'
 import { useSwapFormContext } from 'uniswap/src/features/transactions/swap/contexts/SwapFormContext'
 import { usePriceDifference } from 'uniswap/src/features/transactions/swap/hooks/usePriceDifference'

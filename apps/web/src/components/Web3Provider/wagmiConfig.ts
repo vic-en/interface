@@ -57,7 +57,7 @@ const connectors = isPlaywrightEnv()
   : baseConnectors
 
 export const wagmiConfig = createConfig({
-  chains: [getChainInfo(UniverseChainId.Mainnet), ...ALL_CHAIN_IDS.map(getChainInfo)],
+  chains: [getChainInfo(UniverseChainId.Wonder), ...ALL_CHAIN_IDS.map(getChainInfo)],
   connectors,
   client({ chain }) {
     return createClient({

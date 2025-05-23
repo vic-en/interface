@@ -1,5 +1,5 @@
 import { Protocol } from '@uniswap/router-sdk'
-import { TradeType } from '@uniswap/sdk-core'
+import { TradeType } from '@unifinance/sdk-core'
 import { testSaga } from 'redux-saga-test-plan'
 import { submitOrder } from 'uniswap/src/data/apiClients/tradingApi/TradingApiClient'
 import { DutchOrderInfo, DutchQuoteV2, OrderRequest, Routing } from 'uniswap/src/data/tradingApi/__generated__/index'

@@ -1,6 +1,6 @@
 import providers from '@ethersproject/providers'
 import { ONE, Protocol } from '@uniswap/router-sdk'
-import { Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@unifinance/sdk-core'
 import { NullablePermit, Permit } from 'uniswap/src/data/tradingApi/__generated__/index'
 import { LocalizationContextState } from 'uniswap/src/features/language/LocalizationContext'
 import { PopulatedTransactionRequestArray } from 'uniswap/src/features/transactions/swap/types/swapTxAndGasInfo'

@@ -1,5 +1,5 @@
 import { QueryClient, useQueryClient } from '@tanstack/react-query'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { useCallback, useMemo } from 'react'
 import { getSwappableTokensQueryData } from 'uniswap/src/data/apiClients/tradingApi/useTradingApiSwappableTokensQuery'
 import { ChainId, GetSwappableTokensResponse } from 'uniswap/src/data/tradingApi/__generated__'

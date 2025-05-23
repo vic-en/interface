@@ -4,7 +4,7 @@
 jest.mock('hooks/Tokens')
 jest.mock('components/AccountDrawer/MiniPortfolio/Activity/getCurrency')
 
-import { Currency, WETH9 } from '@uniswap/sdk-core'
+import { Currency, WETH9 } from '@unifinance/sdk-core'
 import { getCurrency } from 'components/AccountDrawer/MiniPortfolio/Activity/getCurrency'
 import { useCurrency, useCurrencyInfo } from 'hooks/Tokens'
 import {

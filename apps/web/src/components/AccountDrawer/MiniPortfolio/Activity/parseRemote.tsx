@@ -4,8 +4,7 @@ import {
   Currency,
   NONFUNGIBLE_POSITION_MANAGER_ADDRESSES,
   TradeType,
-  UNI_ADDRESSES,
-} from '@uniswap/sdk-core'
+} from '@unifinance/sdk-core'
 import { gqlToCurrency, supportedChainIdFromGQLChain } from 'appGraphql/data/util'
 import UniswapXBolt from 'assets/svg/bolt.svg'
 import moonpayLogoSrc from 'assets/svg/moonpay.svg'
@@ -27,7 +26,7 @@ import { Flex, Text, styled } from 'ui/src'
 import { Arrow } from 'ui/src/components/arrow/Arrow'
 import { iconSizes } from 'ui/src/theme'
 import { NetworkLogo } from 'uniswap/src/components/CurrencyLogo/NetworkLogo'
-import { nativeOnChain } from 'uniswap/src/constants/tokens'
+import { nativeOnChain, USDC_WONDER } from 'uniswap/src/constants/tokens'
 import {
   AssetActivityPartsFragment,
   Currency as GQLCurrency,
@@ -67,7 +66,7 @@ const ENS_IMG =
   'https://464911102-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/collections%2F2TjMAeHSzwlQgcOdL48E%2Ficon%2FKWP0gk2C6bdRPliWIA6o%2Fens%20transparent%20background.png?alt=media&token=bd28b063-5a75-4971-890c-97becea09076'
 
 const COMMON_CONTRACTS: { [key: string]: Partial<Activity> | undefined } = {
-  [UNI_ADDRESSES[UniverseChainId.Mainnet].toLowerCase()]: {
+  [USDC_WONDER.address.toLowerCase()]: {
     title: i18n.t('common.uniGovernance'),
     descriptor: i18n.t('common.contractInteraction'),
     logos: [UNI_IMG],
@@ -121,17 +120,18 @@ function callsV3PositionManagerContract(assetActivity: TransactionActivity) {
 }
 
 function callsV4PositionManagerContract(assetActivity: TransactionActivity) {
-  const supportedChain = supportedChainIdFromGQLChain(assetActivity.chain)
-  if (!supportedChain) {
-    return false
-  }
+  // const supportedChain = supportedChainIdFromGQLChain(assetActivity.chain)
+  // if (!supportedChain) {
+  //   return false
+  // }
 
-  // monad testnet does not have v4 support
-  if (supportedChain === UniverseChainId.MonadTestnet) {
-    return false
-  }
+  // // monad testnet does not have v4 support
+  // if (supportedChain === UniverseChainId.MonadTestnet) {
+  //   return false
+  // }
 
-  return isSameAddress(assetActivity.details.to, CHAIN_TO_ADDRESSES_MAP[supportedChain].v4PositionManagerAddress)
+  // return isSameAddress(assetActivity.details.to, CHAIN_TO_ADDRESSES_MAP[supportedChain].v4PositionManagerAddress)
+  return false // not yet supported
 }
 function callsPositionManagerContract(assetActivity: TransactionActivity) {
   return callsV3PositionManagerContract(assetActivity) || callsV4PositionManagerContract(assetActivity)

@@ -2,7 +2,7 @@ import { TypedDataDomain, TypedDataField } from '@ethersproject/abstract-signer'
 import { BigNumber } from '@ethersproject/bignumber'
 import { SwapEventName } from '@uniswap/analytics-events'
 import { PermitTransferFrom } from '@uniswap/permit2-sdk'
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@unifinance/sdk-core'
 import {
   DutchOrder,
   DutchOrderBuilder,

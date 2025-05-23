@@ -1,5 +1,5 @@
 import { formatEther as ethersFormatEther } from '@ethersproject/units'
-import { Currency, CurrencyAmount, Percent, Price } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Percent, Price } from '@unifinance/sdk-core'
 import { getCurrencySymbolDisplayType } from 'constants/localCurrencies'
 import usePrevious from 'hooks/usePrevious'
 import { useCallback, useMemo } from 'react'
