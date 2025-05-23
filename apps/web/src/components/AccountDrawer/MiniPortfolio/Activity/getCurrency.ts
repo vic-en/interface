@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { apolloClient } from 'appGraphql/data/apollo/client'
 import { gqlTokenToCurrencyInfo } from 'appGraphql/data/types'
 import { NATIVE_CHAIN_ID } from 'constants/tokens'

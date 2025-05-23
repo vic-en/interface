@@ -1,4 +1,4 @@
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@unifinance/sdk-core'
 import { ZERO_ADDRESS } from 'constants/misc'
 import { getTokenPageTitle } from 'pages/TokenDetails/utils'
 import i18n from 'uniswap/src/i18n'

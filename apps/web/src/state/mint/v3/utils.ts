@@ -1,4 +1,4 @@
-import { Currency, Price, Token } from '@uniswap/sdk-core'
+import { Currency, Price, Token } from '@unifinance/sdk-core'
 import {
   FeeAmount,
   TICK_SPACINGS,

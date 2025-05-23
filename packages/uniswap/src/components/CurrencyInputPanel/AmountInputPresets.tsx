@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount } from '@unifinance/sdk-core'
 import { Flex, FlexProps } from 'ui/src'
 import { ButtonProps } from 'ui/src/components/buttons/Button/types'
 import { get200MsAnimationDelayFromIndex } from 'ui/src/theme/animations/delay200ms'

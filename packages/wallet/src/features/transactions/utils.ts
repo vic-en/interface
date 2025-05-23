@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { BigNumber, providers } from 'ethers'
 import { UniverseChainId } from 'uniswap/src/features/chains/types'
 import { ValueType, getCurrencyAmount } from 'uniswap/src/features/tokens/getCurrencyAmount'

@@ -1,5 +1,5 @@
 import { InterfaceElementName, SwapEventName } from '@uniswap/analytics-events'
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@unifinance/sdk-core'
 import { LoadingOpacityContainer } from 'components/Loader/styled'
 import Column from 'components/deprecated/Column'
 import { RowBetween, RowFixed } from 'components/deprecated/Row'

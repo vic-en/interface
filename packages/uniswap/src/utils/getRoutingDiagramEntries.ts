@@ -1,5 +1,5 @@
 import { Protocol, ZERO } from '@uniswap/router-sdk'
-import { Currency, Percent, TradeType } from '@uniswap/sdk-core'
+import { Currency, Percent, TradeType } from '@unifinance/sdk-core'
 import { Pair } from '@uniswap/v2-sdk'
 import { FeeAmount, Pool as V3Pool } from '@uniswap/v3-sdk'
 import { ClassicTrade } from 'uniswap/src/features/transactions/swap/types/trade'

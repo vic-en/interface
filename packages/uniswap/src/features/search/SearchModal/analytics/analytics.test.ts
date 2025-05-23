@@ -1,5 +1,5 @@
 import { InterfaceEventName } from '@uniswap/analytics-events'
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@unifinance/sdk-core'
 import { OnchainItemSection, OnchainItemSectionName } from 'uniswap/src/components/lists/OnchainItemList/types'
 import {
   NFTCollectionOption,

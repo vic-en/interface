@@ -1,5 +1,5 @@
 import { ProtocolVersion } from '@uniswap/client-pools/dist/pools/v1/types_pb'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { LPConfigKey } from 'uniswap/src/features/gating/configs'
 
 import { DynamicConfigs } from 'uniswap/src/features/gating/configs'

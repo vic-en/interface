@@ -1,5 +1,5 @@
 import { act } from '@testing-library/react'
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@unifinance/sdk-core'
 import store from 'state'
 import { RouterPreference } from 'state/routing/types'
 import { useRouterPreference, useUserSlippageTolerance } from 'state/user/hooks'

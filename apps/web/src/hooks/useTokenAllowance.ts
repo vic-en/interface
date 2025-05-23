@@ -1,6 +1,6 @@
 import { ContractTransaction } from '@ethersproject/contracts'
 import { InterfaceEventName } from '@uniswap/analytics-events'
-import { CurrencyAmount, MaxUint256, Token } from '@uniswap/sdk-core'
+import { CurrencyAmount, MaxUint256, Token } from '@unifinance/sdk-core'
 import { useTokenContract } from 'hooks/useContract'
 import { useTriggerOnTransactionType } from 'hooks/useTriggerOnTransactionType'
 import { useCallback, useMemo, useRef } from 'react'

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount } from '@unifinance/sdk-core'
 import { Contract, providers } from 'ethers/lib/ethers'
 import { useCallback } from 'react'
 import { Weth } from 'uniswap/src/abis/types'

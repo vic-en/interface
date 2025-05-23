@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { ProtocolVersion } from '@uniswap/client-pools/dist/pools/v1/types_pb'
-import { CurrencyAmount, Percent } from '@uniswap/sdk-core'
+import { CurrencyAmount, Percent } from '@unifinance/sdk-core'
 import { Position as V3Position } from '@uniswap/v3-sdk'
 import { Position as V4Position } from '@uniswap/v4-sdk'
 import {

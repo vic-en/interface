@@ -20,7 +20,7 @@ import {
   WalletConnectionResult,
 } from '@uniswap/analytics-events'
 import { Protocol } from '@uniswap/router-sdk'
-import { Currency, TradeType } from '@uniswap/sdk-core'
+import { Currency, TradeType } from '@unifinance/sdk-core'
 import { PresetPercentage } from 'uniswap/src/components/CurrencyInputPanel/PresetAmountButton'
 import { OnchainItemSectionName } from 'uniswap/src/components/lists/OnchainItemList/types'
 import { NftStandard } from 'uniswap/src/data/graphql/uniswap-data-api/__generated__/types-and-hooks'

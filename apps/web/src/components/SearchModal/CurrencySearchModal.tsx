@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { CurrencySearch } from 'components/SearchModal/CurrencySearch'
 import { memo } from 'react'
 import { TOKEN_SELECTOR_WEB_MAX_WIDTH } from 'uniswap/src/components/TokenSelector/TokenSelector'

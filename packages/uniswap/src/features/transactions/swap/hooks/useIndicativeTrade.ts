@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { useMemo } from 'react'
 import { useTradingApiIndicativeQuoteQuery } from 'uniswap/src/data/apiClients/tradingApi/useTradingApiIndicativeQuoteQuery'
 import { IndicativeQuoteRequest, QuoteRequest } from 'uniswap/src/data/tradingApi/__generated__/index'

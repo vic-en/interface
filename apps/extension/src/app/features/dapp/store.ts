@@ -173,7 +173,7 @@ function saveDappActiveAccount(dappUrl: string, account: Account, initialPropert
     [dappUrl]: {
       ...state[dappUrl],
       // TODO: WALL-4919: Remove hardcoded Mainnet
-      lastChainId: state[dappUrl]?.lastChainId ?? UniverseChainId.Mainnet,
+      lastChainId: state[dappUrl]?.lastChainId ?? UniverseChainId.Wonder,
       activeConnectedAddress: account.address,
       connectedAccounts: ((): Account[] => {
         const currConnectedAccounts = state[dappUrl]?.connectedAccounts || []

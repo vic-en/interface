@@ -1,5 +1,5 @@
 import { SwapEventName, SwapPriceUpdateUserResponse } from '@uniswap/analytics-events'
-import { Currency, Percent } from '@uniswap/sdk-core'
+import { Currency, Percent } from '@unifinance/sdk-core'
 import SwapError, { PendingModalError } from 'components/ConfirmSwapModal/Error'
 import { SwapHead } from 'components/ConfirmSwapModal/Head'
 import { SwapModal } from 'components/ConfirmSwapModal/Modal'

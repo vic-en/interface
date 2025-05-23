@@ -1,5 +1,5 @@
 import { ProtocolVersion } from '@uniswap/client-pools/dist/pools/v1/types_pb'
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@unifinance/sdk-core'
 import { PoolData } from 'appGraphql/data/pools/usePoolData'
 import { PriceChartData } from 'components/Charts/PriceChart'
 import { SingleHistogramData } from 'components/Charts/VolumeChart/renderer'

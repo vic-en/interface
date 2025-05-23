@@ -1,5 +1,5 @@
 import { ProtocolVersion } from '@uniswap/client-pools/dist/pools/v1/types_pb'
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount } from '@unifinance/sdk-core'
 import CurrencyLogo from 'components/Logo/CurrencyLogo'
 import { getCurrencyForProtocol } from 'pages/Pool/Positions/create/utils'
 import { Flex, Text } from 'ui/src'

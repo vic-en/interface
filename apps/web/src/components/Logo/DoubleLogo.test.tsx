@@ -1,4 +1,4 @@
-import { Currency, Token } from '@uniswap/sdk-core'
+import { Currency, Token } from '@unifinance/sdk-core'
 import { DoubleCurrencyLogo } from 'components/Logo/DoubleLogo'
 import { useCurrencyInfo } from 'hooks/Tokens'
 import { mocked } from 'test-utils/mocked'

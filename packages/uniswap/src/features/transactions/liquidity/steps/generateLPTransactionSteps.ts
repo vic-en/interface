@@ -1,5 +1,5 @@
 import { ADDRESS_ZERO } from '@uniswap/router-sdk'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { CurrencyAmount, Token } from '@unifinance/sdk-core'
 import { createCollectFeesStep } from 'uniswap/src/features/transactions/liquidity/steps/collectFees'
 import { orderCollectFeesSteps } from 'uniswap/src/features/transactions/liquidity/steps/collectFeesSteps'
 import { orderDecreaseLiquiditySteps } from 'uniswap/src/features/transactions/liquidity/steps/decreaseLiquiditySteps'

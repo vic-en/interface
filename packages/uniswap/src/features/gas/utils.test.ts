@@ -1,4 +1,4 @@
-import { CurrencyAmount } from '@uniswap/sdk-core'
+import { CurrencyAmount } from '@unifinance/sdk-core'
 import { applyNativeTokenPercentageBuffer, hasSufficientFundsIncludingGas } from 'uniswap/src/features/gas/utils'
 import { DAI, MAINNET_CURRENCY } from 'uniswap/src/test/fixtures'
 

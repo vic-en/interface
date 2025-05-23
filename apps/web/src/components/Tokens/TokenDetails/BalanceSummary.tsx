@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { PortfolioBalance } from 'appGraphql/data/portfolios'
 import { getTokenDetailsURL, gqlToCurrency, supportedChainIdFromGQLChain } from 'appGraphql/data/util'
 import { PortfolioLogo } from 'components/AccountDrawer/MiniPortfolio/PortfolioLogo'

@@ -36,6 +36,9 @@ export function getChainLabel(chainId: UniverseChainId): string {
 }
 
 export function isTestnetChain(chainId: UniverseChainId): boolean {
+  if (chainId === undefined) {
+    return false // or handle undefined case as needed
+  }
   return Boolean(getChainInfo(chainId)?.testnet)
 }
 

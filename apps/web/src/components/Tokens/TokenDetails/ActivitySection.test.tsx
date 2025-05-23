@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react'
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@unifinance/sdk-core'
 import { ActivitySection } from 'components/Tokens/TokenDetails/ActivitySection'
 import { render } from 'test-utils/render'
 

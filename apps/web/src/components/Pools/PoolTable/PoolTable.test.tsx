@@ -1,6 +1,6 @@
 import 'test-utils/tokens/mocks'
 
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@unifinance/sdk-core'
 import { ExploreTopPoolTable } from 'components/Pools/PoolTable/PoolTable'
 import Router from 'react-router-dom'
 import { useExploreContextTopPools } from 'state/explore/topPools'

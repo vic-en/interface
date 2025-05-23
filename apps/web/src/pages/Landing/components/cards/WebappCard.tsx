@@ -9,7 +9,7 @@ import ValuePropCard from 'pages/Landing/components/cards/ValuePropCard'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import { Flex, Text, useMedia } from 'ui/src'
-import { LDO, UNI, USDC_BASE } from 'uniswap/src/constants/tokens'
+// import { LDO, UNI } from 'uniswap/src/constants/tokens'
 import { useTokenPromoQuery } from 'uniswap/src/data/graphql/uniswap-data-api/__generated__/types-and-hooks'
 import { UniverseChainId } from 'uniswap/src/features/chains/types'
 import { toGraphQLChain } from 'uniswap/src/features/chains/utils'
@@ -18,22 +18,18 @@ import { NumberType, useFormatter } from 'utils/formatNumbers'
 const primary = '#2ABDFF'
 
 const tokens: { chainId: UniverseChainId; address: string }[] = [
-  {
-    chainId: UniverseChainId.Mainnet,
-    address: 'ETH',
-  },
-  {
-    chainId: UniverseChainId.Base,
-    address: USDC_BASE.address,
-  },
-  {
-    chainId: UniverseChainId.Mainnet,
-    address: UNI[UniverseChainId.Mainnet].address,
-  },
-  {
-    chainId: UniverseChainId.Mainnet,
-    address: LDO.address,
-  },
+  // {
+  //   chainId: UniverseChainId.Mainnet,
+  //   address: 'ETH',
+  // },
+  // {
+  //   chainId: UniverseChainId.Mainnet,
+  //   address: UNI[UniverseChainId.Mainnet].address,
+  // },
+  // {
+  //   chainId: UniverseChainId.Mainnet,
+  //   address: LDO.address,
+  // },
 ]
 
 function Token({ chainId, address }: { chainId: UniverseChainId; address: string }) {

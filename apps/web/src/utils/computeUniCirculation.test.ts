@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { CurrencyAmount, Token } from '@unifinance/sdk-core'
 import { ZERO_ADDRESS } from 'constants/misc'
 import JSBI from 'jsbi'
 import { computeUniCirculation } from 'utils/computeUniCirculation'

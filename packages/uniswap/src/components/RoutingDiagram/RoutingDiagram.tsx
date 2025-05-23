@@ -1,5 +1,5 @@
 import { Protocol } from '@uniswap/router-sdk'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { FeeAmount } from '@uniswap/v3-sdk'
 import { Trans } from 'react-i18next'
 import { Flex, styled as tamaguiStyled, Text, Tooltip } from 'ui/src'

@@ -1,5 +1,5 @@
 import { MaxUint256, permit2Address } from '@uniswap/permit2-sdk'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { RPC_PROVIDERS } from 'constants/providers'
 import { ApproveInfo, WrapInfo } from 'state/routing/types'
 import ERC20_ABI from 'uniswap/src/abis/erc20.json'
@@ -31,7 +31,7 @@ export async function getApproveInfo(
 
   // routing-api under estimates gas for Arbitrum swaps so it inflates cost per gas by a lot
   // so disable showing approves for Arbitrum until routing-api gives more accurate gas estimates
-  if (currency.chainId === UniverseChainId.ArbitrumOne) {
+  if (currency.chainId === UniverseChainId.Wonder) {  // disable gas
     return { needsApprove: false }
   }
 

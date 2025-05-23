@@ -1,4 +1,4 @@
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@unifinance/sdk-core'
 import dayjs from 'dayjs'
 import { getNativeAddress } from 'uniswap/src/constants/addresses'
 import {

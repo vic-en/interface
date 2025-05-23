@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Percent, TradeType } from '@uniswap/sdk-core'
+import { Percent, TradeType } from '@unifinance/sdk-core'
 import { FlatFeeOptions } from '@uniswap/universal-router-sdk'
 import { FeeOptions } from '@uniswap/v3-sdk'
 import { useAccount } from 'hooks/useAccount'

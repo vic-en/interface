@@ -1,4 +1,4 @@
-import { Currency, Token } from '@uniswap/sdk-core'
+import { Currency, Token } from '@unifinance/sdk-core'
 import { FeeAmount } from '@uniswap/v3-sdk'
 import { PoolState, usePool } from 'hooks/usePools'
 import ms from 'ms'

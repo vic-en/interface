@@ -1,4 +1,4 @@
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@unifinance/sdk-core'
 import { formatTokenAmount } from 'components/Liquidity/utils'
 import { useMemo } from 'react'
 

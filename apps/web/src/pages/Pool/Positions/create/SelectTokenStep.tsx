@@ -1,6 +1,6 @@
 import { FeePoolSelectAction, LiquidityEventName } from '@uniswap/analytics-events'
 import { ProtocolVersion } from '@uniswap/client-pools/dist/pools/v1/types_pb'
-import { Currency, Percent } from '@uniswap/sdk-core'
+import { Currency, Percent } from '@unifinance/sdk-core'
 import { PrefetchBalancesWrapper } from 'appGraphql/data/apollo/AdaptiveTokenBalancesProvider'
 import CreatingPoolInfo from 'components/CreatingPoolInfo/CreatingPoolInfo'
 import { ErrorCallout } from 'components/ErrorCallout'

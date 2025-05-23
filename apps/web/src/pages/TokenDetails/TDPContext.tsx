@@ -1,5 +1,5 @@
 import { QueryResult } from '@apollo/client'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { PortfolioBalance } from 'appGraphql/data/portfolios'
 import { TDPChartState } from 'components/Tokens/TokenDetails/ChartSection'
 import { PropsWithChildren, createContext, useContext } from 'react'

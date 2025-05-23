@@ -1,4 +1,4 @@
-import { Currency, Percent } from '@uniswap/sdk-core'
+import { Currency, Percent } from '@unifinance/sdk-core'
 import { ChartEntry } from 'components/Charts/LiquidityRangeInput/types'
 import { DoubleCurrencyLogo } from 'components/Logo/DoubleLogo'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'

@@ -1,7 +1,7 @@
 import 'test-utils/tokens/mocks'
 
 import { permit2Address } from '@uniswap/permit2-sdk'
-import { TradeType as MockTradeType, Token } from '@uniswap/sdk-core'
+import { TradeType as MockTradeType, Token } from '@unifinance/sdk-core'
 import { getCurrency } from 'components/AccountDrawer/MiniPortfolio/Activity/getCurrency'
 import {
   signatureToActivity,

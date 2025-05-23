@@ -1,4 +1,4 @@
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@unifinance/sdk-core'
 import { SwapDetails } from 'components/swap/SwapDetails'
 import { SlippageTooltipContent } from 'components/swap/SwapLineItem'
 import {

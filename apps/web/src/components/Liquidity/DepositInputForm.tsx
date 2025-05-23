@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { DepositInfo } from 'components/Liquidity/types'
 import { useCurrencyInfo } from 'hooks/Tokens'
 import { useTokenBalanceWithBuffer } from 'pages/Pool/Positions/create/hooks'

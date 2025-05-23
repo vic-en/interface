@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Fraction } from '@unifinance/sdk-core'
 import JSBI from 'jsbi'
 import formatLocaleNumber from 'lib/utils/formatLocaleNumber'
 import { DEFAULT_LOCALE, Locale } from 'uniswap/src/features/language/constants'

@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { UniswapXOrderDetails } from 'state/signatures/types'
 import {
   TransactionStatus,

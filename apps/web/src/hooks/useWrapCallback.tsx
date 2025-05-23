@@ -1,5 +1,5 @@
 import { InterfaceEventName } from '@uniswap/analytics-events'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@unifinance/sdk-core'
 import { useAccount } from 'hooks/useAccount'
 import { useWETHContract } from 'hooks/useContract'
 import { formatToDecimal, getTokenAddress } from 'lib/utils/analytics'

@@ -1,4 +1,4 @@
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@unifinance/sdk-core'
 import { tryParsePrice } from 'state/mint/v3/utils'
 
 describe('hooks', () => {

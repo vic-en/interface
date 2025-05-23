@@ -1,6 +1,6 @@
 import { ApolloError } from '@apollo/client'
 import { BigNumber } from '@ethersproject/bignumber'
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@unifinance/sdk-core'
 import { useRef } from 'react'
 import {
   Chain,

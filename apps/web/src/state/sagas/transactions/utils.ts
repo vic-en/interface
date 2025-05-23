@@ -1,7 +1,7 @@
 import { datadogRum } from '@datadog/browser-rum'
 import { TransactionResponse } from '@ethersproject/abstract-provider'
 import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
-import { TradeType } from '@uniswap/sdk-core'
+import { TradeType } from '@unifinance/sdk-core'
 import { wagmiConfig } from 'components/Web3Provider/wagmiConfig'
 import { clientToProvider } from 'hooks/useEthersProvider'
 import ms from 'ms'

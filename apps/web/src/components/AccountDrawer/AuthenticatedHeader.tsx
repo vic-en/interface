@@ -1,6 +1,6 @@
 import { NetworkStatus } from '@apollo/client'
 import { InterfaceElementName } from '@uniswap/analytics-events'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { CurrencyAmount, Token } from '@unifinance/sdk-core'
 import { AddressDisplay } from 'components/AccountDetails/AddressDisplay'
 import { ActionTile } from 'components/AccountDrawer/ActionTile'
 import { DownloadGraduatedWalletCard } from 'components/AccountDrawer/DownloadGraduatedWalletCard'
