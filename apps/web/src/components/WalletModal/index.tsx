@@ -5,7 +5,7 @@ import ConnectionErrorView from 'components/WalletModal/ConnectionErrorView'
 import { DownloadWalletRow } from 'components/WalletModal/DownloadWalletRow'
 import { AlternativeOption, Option } from 'components/WalletModal/Option'
 import PrivacyPolicyNotice from 'components/WalletModal/PrivacyPolicyNotice'
-import { UniswapWalletOptions } from 'components/WalletModal/UniswapWalletOptions'
+// import { UniswapWalletOptions } from 'components/WalletModal/UniswapWalletOptions'
 import { useOrderedConnections } from 'components/WalletModal/useOrderedConnections'
 import { useRecentConnectorId } from 'components/Web3Provider/constants'
 import { useModalState } from 'hooks/useModalState'
@@ -17,7 +17,7 @@ import { transitions } from 'theme/styles'
 import { Flex, Separator, Text } from 'ui/src'
 import { DoubleChevron } from 'ui/src/components/icons/DoubleChevron'
 import { DoubleChevronInverted } from 'ui/src/components/icons/DoubleChevronInverted'
-import { UniswapLogo } from 'ui/src/components/icons/UniswapLogo'
+// import { UniswapLogo } from 'ui/src/components/icons/UniswapLogo'
 import { CONNECTION_PROVIDER_IDS } from 'uniswap/src/constants/web3'
 import { FeatureFlags } from 'uniswap/src/features/gating/flags'
 import { useFeatureFlag } from 'uniswap/src/features/gating/hooks'
@@ -57,7 +57,7 @@ export default function WalletModal() {
       data-testid="wallet-modal"
     >
       <ConnectionErrorView />
-      {showDownloadHeader && (
+      {/* {showDownloadHeader && (
         <Flex display="flex" $md={{ display: 'none' }}>
           <DownloadWalletRow
             onPress={handleOpenGetTheAppModal}
@@ -70,19 +70,19 @@ export default function WalletModal() {
             titleTextVariant="buttonLabel4"
           />
         </Flex>
-      )}
-      <Flex row justifyContent={isEmbeddedWalletEnabled ? 'center' : 'space-between'} width="100%">
+      )} */}
+      {/* <Flex row justifyContent={isEmbeddedWalletEnabled ? 'center' : 'space-between'} width="100%">
         <Text variant="subheading2">
           {isEmbeddedWalletEnabled ? t('nav.logInOrConnect.title') : t('common.connectAWallet.button')}
         </Text>
-      </Flex>
-      {isEmbeddedWalletEnabled ? (
+      </Flex> */}
+      {/* {isEmbeddedWalletEnabled ? (
         <Flex justifyContent="center" alignItems="center" py={8}>
           <UniswapLogo size={48} color="$accent1" />
         </Flex>
       ) : (
         <UniswapWalletOptions />
-      )}
+      )} */}
       {isEmbeddedWalletEnabled ? null : (
         <Flex
           row
@@ -117,7 +117,7 @@ export default function WalletModal() {
             transition={`${transitions.duration.fast} ${transitions.timing.inOut}`}
             data-testid="option-grid"
           >
-            {(recentConnectorId === CONNECTION_PROVIDER_IDS.UNISWAP_WALLET_CONNECT_CONNECTOR_ID || isMobileWeb) &&
+            {/* {(recentConnectorId === CONNECTION_PROVIDER_IDS.UNISWAP_WALLET_CONNECT_CONNECTOR_ID || isMobileWeb) &&
               isEmbeddedWalletEnabled && (
                 <>
                   <Option connectorId={CONNECTION_PROVIDER_IDS.UNISWAP_WALLET_CONNECT_CONNECTOR_ID} />
@@ -129,7 +129,7 @@ export default function WalletModal() {
                 <Option connectorId={c.id} key={c.uid} detected={c.isInjected} />
                 {index < connectors.length - 1 || isEmbeddedWalletEnabled ? <Separator /> : null}
               </>
-            ))}
+            ))} */}
             {isEmbeddedWalletEnabled && !isMobileWeb && (
               <Option connectorId={AlternativeOption.OTHER_WALLETS} onPress={() => setMenu(MenuState.OTHER_WALLETS)} />
             )}
