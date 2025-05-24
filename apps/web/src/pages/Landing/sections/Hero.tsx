@@ -1,11 +1,11 @@
-import { ColumnCenter } from 'components/deprecated/Column'
+// import { ColumnCenter } from 'components/deprecated/Column'
 import { useCurrency } from 'hooks/Tokens'
 import { useScroll } from 'hooks/useScroll'
-import { TokenCloud } from 'pages/Landing/components/TokenCloud'
-import { Hover, RiseIn, RiseInText } from 'pages/Landing/components/animations'
+// import { TokenCloud } from 'pages/Landing/components/TokenCloud'
+import {  RiseIn, RiseInText } from 'pages/Landing/components/animations'
 import { Swap } from 'pages/Swap'
 import { Fragment, useCallback, useMemo } from 'react'
-import { ChevronDown } from 'react-feather'
+// import { ChevronDown } from 'react-feather'
 import { Trans, useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import { serializeSwapStateToURLParameters } from 'state/swap/hooks'
@@ -19,7 +19,7 @@ interface HeroProps {
   transition?: boolean
 }
 
-export function Hero({ scrollToRef, transition }: HeroProps) {
+export function Hero({  transition }: HeroProps) {
   const media = useMedia()
   const { height: scrollPosition } = useScroll({ enabled: !media.sm })
   const { defaultChainId } = useEnabledChains()
@@ -49,22 +49,22 @@ export function Hero({ scrollToRef, transition }: HeroProps) {
     [navigate],
   )
 
-  const renderRiseInText = useMemo(() => {
-    return t('hero.swap.title')
-      .split(/(<br\/>)|\s+/)
-      .filter(Boolean) // splits the string by spaces but also captures "<br/>" as a separate element in the array
-      .map((word, index) => {
-        if (word === '<br/>') {
-          return <br key={`${index}-${word}-br`} />
-        } else {
-          return (
-            <Fragment key={`${index}-${word}`}>
-              <RiseInText delay={index * 0.1}>{word}</RiseInText>{' '}
-            </Fragment>
-          )
-        }
-      })
-  }, [t])
+  // const renderRiseInText = useMemo(() => {
+  //   return t('hero.swap.title')
+  //     .split(/(<br\/>)|\s+/)
+  //     .filter(Boolean) // splits the string by spaces but also captures "<br/>" as a separate element in the array
+  //     .map((word, index) => {
+  //       if (word === '<br/>') {
+  //         return <br key={`${index}-${word}-br`} />
+  //       } else {
+  //         return (
+  //           <Fragment key={`${index}-${word}`}>
+  //             <RiseInText delay={index * 0.1}>{word}</RiseInText>{' '}
+  //           </Fragment>
+  //         )
+  //       }
+  //     })
+  // }, [t])
 
   return (
     <Flex
@@ -78,7 +78,7 @@ export function Hero({ scrollToRef, transition }: HeroProps) {
       pt={INTERFACE_NAV_HEIGHT}
       pointerEvents="none"
     >
-      {!media.sm && <TokenCloud />}
+      {/*{!media.sm && <TokenCloud />}*/}
 
       <Flex
         alignSelf="center"
@@ -94,20 +94,20 @@ export function Hero({ scrollToRef, transition }: HeroProps) {
           transition: transition ? 'shrinkAndFade 1s ease-in-out forwards' : undefined,
         }}
       >
-        <Flex maxWidth={920} alignItems="center" pointerEvents="none">
-          <Text
-            variant="heading1"
-            fontSize={64}
-            lineHeight={76}
-            textAlign="center"
-            fontWeight="$book"
-            $md={{ fontSize: 52 }}
-            $sm={{ variant: 'heading2', fontSize: 36 }}
-            $short={{ variant: 'heading2', fontSize: 36 }}
-          >
-            {renderRiseInText}
-          </Text>
-        </Flex>
+        {/*<Flex maxWidth={920} alignItems="center" pointerEvents="none">*/}
+        {/*  <Text*/}
+        {/*    variant="heading1"*/}
+        {/*    fontSize={64}*/}
+        {/*    lineHeight={76}*/}
+        {/*    textAlign="center"*/}
+        {/*    fontWeight="$book"*/}
+        {/*    $md={{ fontSize: 52 }}*/}
+        {/*    $sm={{ variant: 'heading2', fontSize: 36 }}*/}
+        {/*    $short={{ variant: 'heading2', fontSize: 36 }}*/}
+        {/*  >*/}
+        {/*    {renderRiseInText}*/}
+        {/*  </Text>*/}
+        {/*</Flex>*/}
 
         <RiseIn delay={0.4}>
           <Flex
@@ -140,34 +140,34 @@ export function Hero({ scrollToRef, transition }: HeroProps) {
 
       <Flex flex={1} />
 
-      <Flex
-        position="absolute"
-        width="100%"
-        centered
-        pointerEvents="none"
-        bottom={48}
-        style={{ transform: `translate(0px, ${translateY}px)`, opacity: opacityY }}
-        $midHeight={{ display: 'none' }}
-      >
-        <RiseIn delay={0.3}>
-          <Flex
-            alignItems="center"
-            justifyContent="flex-start"
-            onPress={() => scrollToRef()}
-            cursor="pointer"
-            width={500}
-          >
-            <Hover>
-              <ColumnCenter>
-                <Text variant="body2">
-                  <Trans i18nKey="hero.scroll" />
-                </Text>
-                <ChevronDown />
-              </ColumnCenter>
-            </Hover>
-          </Flex>
-        </RiseIn>
-      </Flex>
+      {/*<Flex*/}
+      {/*  position="absolute"*/}
+      {/*  width="100%"*/}
+      {/*  centered*/}
+      {/*  pointerEvents="none"*/}
+      {/*  bottom={48}*/}
+      {/*  style={{ transform: `translate(0px, ${translateY}px)`, opacity: opacityY }}*/}
+      {/*  $midHeight={{ display: 'none' }}*/}
+      {/*>*/}
+      {/*  <RiseIn delay={0.3}>*/}
+      {/*    <Flex*/}
+      {/*      alignItems="center"*/}
+      {/*      justifyContent="flex-start"*/}
+      {/*      onPress={() => scrollToRef()}*/}
+      {/*      cursor="pointer"*/}
+      {/*      width={500}*/}
+      {/*    >*/}
+      {/*      <Hover>*/}
+      {/*        <ColumnCenter>*/}
+      {/*          <Text variant="body2">*/}
+      {/*            <Trans i18nKey="hero.scroll" />*/}
+      {/*          </Text>*/}
+      {/*          <ChevronDown />*/}
+      {/*        </ColumnCenter>*/}
+      {/*      </Hover>*/}
+      {/*    </Flex>*/}
+      {/*  </RiseIn>*/}
+      {/*</Flex>*/}
     </Flex>
   )
 }

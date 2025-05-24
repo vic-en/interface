@@ -138,33 +138,33 @@ function EmptyPositionsView({ chainId, isConnected }: { chainId?: UniverseChainI
   )
 }
 
-function LearnMoreTile({ img, text, link }: { img: string; text: string; link?: string }) {
-  return (
-    <Anchor
-      href={link}
-      textDecorationLine="none"
-      target="_blank"
-      rel="noopener noreferrer"
-      {...ClickableTamaguiStyle}
-      hoverStyle={{ backgroundColor: '$surface1Hovered', borderColor: '$surface3Hovered' }}
-    >
-      <Flex
-        row
-        width={344}
-        borderRadius="$rounded20"
-        borderColor="$surface3"
-        borderWidth="$spacing1"
-        borderStyle="solid"
-        alignItems="center"
-        gap="$gap16"
-        overflow="hidden"
-      >
-        <img src={img} style={{ objectFit: 'cover', width: '72px', height: '72px' }} />
-        <Text variant="subheading2">{text}</Text>
-      </Flex>
-    </Anchor>
-  )
-}
+// function LearnMoreTile({ img, text, link }: { img: string; text: string; link?: string }) {
+//   return (
+//     <Anchor
+//       href={link}
+//       textDecorationLine="none"
+//       target="_blank"
+//       rel="noopener noreferrer"
+//       {...ClickableTamaguiStyle}
+//       hoverStyle={{ backgroundColor: '$surface1Hovered', borderColor: '$surface3Hovered' }}
+//     >
+//       <Flex
+//         row
+//         width={344}
+//         borderRadius="$rounded20"
+//         borderColor="$surface3"
+//         borderWidth="$spacing1"
+//         borderStyle="solid"
+//         alignItems="center"
+//         gap="$gap16"
+//         overflow="hidden"
+//       >
+//         <img src={img} style={{ objectFit: 'cover', width: '72px', height: '72px' }} />
+//         <Text variant="subheading2">{text}</Text>
+//       </Flex>
+//     </Anchor>
+//   )
+// }
 
 const chainFilterAtom = atom<UniverseChainId | null>(null)
 const versionFilterAtom = atom<ProtocolVersion[]>([ProtocolVersion.V4, ProtocolVersion.V3, ProtocolVersion.V2])
@@ -250,11 +250,11 @@ export default function Pool() {
     isPendingTransaction,
     isModalOpen,
     tokenRewards,
-    openModal,
+    // openModal,
     closeModal,
-    setTokenRewards,
+    // setTokenRewards,
     onTransactionSuccess,
-    hasCollectedRewards,
+    // hasCollectedRewards,
   } = useLpIncentives()
 
   const { data, isPlaceholderData, refetch, isLoading, fetchNextPage, hasNextPage, isFetching } =
