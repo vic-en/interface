@@ -40,7 +40,7 @@ function LandingV2({ transition }: { transition?: boolean }) {
       <Hero scrollToRef={scrollToRef} transition={transition} />
       <Suspense>
         <Rive />
-        <Fold ref={scrollAnchor} />
+        {/*<Fold ref={scrollAnchor} />*/}
       </Suspense>
     </Flex>
   )

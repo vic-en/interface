@@ -6,7 +6,7 @@ import {
   // WBTC,
   WRAPPED_NATIVE_CURRENCY,
 } from 'uniswap/src/constants/tokens'
-import { UniverseChainId } from 'uniswap/src/features/chains/types'
+// import { UniverseChainId } from 'uniswap/src/features/chains/types'
 
 type ChainTokenList = {
   readonly [chainId: number]: Token[]

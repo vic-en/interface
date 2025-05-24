@@ -69,7 +69,7 @@ export function CompanyMenu() {
           )} */}
         </Flex>
       </Popover.Trigger>
-      {isMobileDrawer ? <MobileMenuDrawer isOpen={isOpen} closeMenu={closeMenu} /> : <MenuDropdown close={closeMenu} />}
+      {isMobileDrawer ? <MobileMenuDrawer isOpen={isOpen} closeMenu={closeMenu} /> : <></>}
     </Popover>
   )
 }

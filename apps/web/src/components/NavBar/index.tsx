@@ -14,8 +14,8 @@ import deprecatedStyled, { css } from 'lib/styled-components'
 import { Flex, Nav as TamaguiNav, styled, useMedia } from 'ui/src'
 import { INTERFACE_NAV_HEIGHT, breakpoints, zIndexes } from 'ui/src/theme'
 import { useEnabledChains } from 'uniswap/src/features/chains/hooks/useEnabledChains'
-import { FeatureFlags } from 'uniswap/src/features/gating/flags'
-import { useFeatureFlag } from 'uniswap/src/features/gating/hooks'
+// import { FeatureFlags } from 'uniswap/src/features/gating/flags'
+// import { useFeatureFlag } from 'uniswap/src/features/gating/hooks'
 
 // Flex is position relative by default, we must unset the position on every Flex
 // between the body and search component
@@ -44,6 +44,8 @@ const Left = deprecatedStyled(Row)`
 `
 const Right = deprecatedStyled(Row)`
   justify-content: flex-end;
+  margin: 10px;
+  padding: 10px;
   ${NavItems}
 `
 
@@ -71,7 +73,7 @@ function useShouldHideChainSelector() {
 }
 
 export default function Navbar() {
-  const isLandingPage = useIsPage(PageType.LANDING)
+  // const isLandingPage = useIsPage(PageType.LANDING)
 
   const media = useMedia()
   const isSmallScreen = media.md
@@ -83,7 +85,7 @@ export default function Navbar() {
   const hideChainSelector = useShouldHideChainSelector()
 
   const { isTestnetModeEnabled } = useEnabledChains()
-  const isEmbeddedWalletEnabled = useFeatureFlag(FeatureFlags.EmbeddedWallet)
+  // const isEmbeddedWalletEnabled = useFeatureFlag(FeatureFlags.EmbeddedWallet)
 
   return (
     <Nav>
@@ -97,11 +99,11 @@ export default function Navbar() {
 
         <Right>
           {collapseSearchBar && <SearchBar maxHeight={NAV_SEARCH_MAX_HEIGHT} fullScreen={isSmallScreen} />}
-          {/* {!isEmbeddedWalletEnabled && isLandingPage && !isSmallScreen && <NewUserCTAButton />} */}
+           {/*{!isEmbeddedWalletEnabled && isLandingPage && !isSmallScreen && <NewUserCTAButton />}*/}
           {!account.isConnected && !account.isConnecting && <PreferenceMenu />}
           {!hideChainSelector && <ChainSelector />}
           {isTestnetModeEnabled && <TestnetModeTooltip />}
-          {/* {isEmbeddedWalletEnabled && !account.address && <NewUserCTAButton />} */}
+           {/*{isEmbeddedWalletEnabled && !account.address && <NewUserCTAButton />}*/}
           <Web3Status />
         </Right>
       </UnpositionedFlex>
