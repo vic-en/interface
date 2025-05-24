@@ -1,6 +1,6 @@
 import { ChainSelector } from 'components/NavBar/ChainSelector'
 import { CompanyMenu } from 'components/NavBar/CompanyMenu'
-import { NewUserCTAButton } from 'components/NavBar/DownloadApp/NewUserCTAButton'
+// import { NewUserCTAButton } from 'components/NavBar/DownloadApp/NewUserCTAButton'
 import { PreferenceMenu } from 'components/NavBar/PreferencesMenu'
 import { useTabsVisible } from 'components/NavBar/ScreenSizes'
 import { SearchBar } from 'components/NavBar/SearchBar'
@@ -89,7 +89,7 @@ export default function Navbar() {
     <Nav>
       <UnpositionedFlex row centered width="100%">
         <Left>
-          <CompanyMenu />
+           <CompanyMenu />
           {areTabsVisible && <Tabs />}
         </Left>
 
@@ -97,11 +97,11 @@ export default function Navbar() {
 
         <Right>
           {collapseSearchBar && <SearchBar maxHeight={NAV_SEARCH_MAX_HEIGHT} fullScreen={isSmallScreen} />}
-          {!isEmbeddedWalletEnabled && isLandingPage && !isSmallScreen && <NewUserCTAButton />}
+          {/* {!isEmbeddedWalletEnabled && isLandingPage && !isSmallScreen && <NewUserCTAButton />} */}
           {!account.isConnected && !account.isConnecting && <PreferenceMenu />}
           {!hideChainSelector && <ChainSelector />}
           {isTestnetModeEnabled && <TestnetModeTooltip />}
-          {isEmbeddedWalletEnabled && !account.address && <NewUserCTAButton />}
+          {/* {isEmbeddedWalletEnabled && !account.address && <NewUserCTAButton />} */}
           <Web3Status />
         </Right>
       </UnpositionedFlex>
